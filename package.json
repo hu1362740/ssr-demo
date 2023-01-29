@@ -1,0 +1,28 @@
+{
+  "name": "ssr-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hu1362740/ssr-demo.git"
+  },
+  "author": "hl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hu1362740/ssr-demo/issues"
+  },
+  "homepage": "https://github.com/hu1362740/ssr-demo#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.33.0",
+    "eslint-plugin-react": "^7.32.1",
+    "husky": "^8.0.3"
+  }
+}
