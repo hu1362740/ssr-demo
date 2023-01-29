@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon --watch src server_build/bundle.js --ext tsx,ts",
+    "build:server": "npx webpack build --config ./webpack.server.js --watch",
+    "dev": "npm run build:server && npm run start"
   },
   "repository": {
     "type": "git",
@@ -17,12 +20,27 @@
   },
   "homepage": "https://github.com/hu1362740/ssr-demo#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "@types/express": "^4.17.16",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
+    "babel-loader": "^9.1.2",
     "eslint": "^8.33.0",
     "eslint-plugin-react": "^7.32.1",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "nodemon": "^2.0.20",
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
